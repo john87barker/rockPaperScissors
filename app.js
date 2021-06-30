@@ -1,4 +1,4 @@
-let playerChoice = {
+let player = {
   rock: {
     win: 'scissors',
     lose: 'paper'
@@ -16,14 +16,16 @@ let playerChoice = {
   }
 }
 
-function play() {
-  if (playerChoice == rock)
-    console.log(rock)
-  if (playerChoice == paper)
-    console.log(paper)
-  if (playerChoice == rock)
-    console.log(paper)
+function play(playerWeapon) {
+  let weapon = player[playerWeapon]
+
+  console.log(weapon)
 }
+function cpu() {
+
+}
+
+
 
 function determineWinner() {
 
