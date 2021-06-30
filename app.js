@@ -1,17 +1,22 @@
 let playerChoice = {
   rock: {
-
+    win: 'scissors',
+    lose: 'paper'
 
   },
   paper: {
+    win: 'rock',
+    lose: 'scissors'
 
   },
   scissors: {
+    win: 'paper',
+    lose: 'rock'
 
   }
 }
 
-function play(event) {
+function play() {
   if (playerChoice == rock)
     console.log(rock)
   if (playerChoice == paper)
