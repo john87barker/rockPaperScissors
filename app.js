@@ -16,29 +16,32 @@ let player = {
   }
 }
 
+
 function play(playerWeapon) {
   let weapon = player[playerWeapon]
-  let cpu = 'paper'
   console.log(weapon)
 
 
-  determineWinner()
+  determineWinner(playerWeapon)
 }
 
 
 
-function determineWinner() {
+function determineWinner(playerWeapon) {
   let final = Math.round(Math.random() * 2.5)
   console.log(final)
+  let weapon = player[0]
+
   if (final == 2) {
-    alert('Congrats! \n You Won')
-  }
-  if (final == 0) {
-    alert('Oh no! You\'re a loser!\n Play again?')
-  } else {
-    alert('You Tied! Try again?')
+    return document.getElementById('winLose').innerText = `You won with ${playerWeapon} \n you beat ${player[playerWeapon].win}`
   }
 
+  if (final == 0) {
+    return document.getElementById('winLose').innerText = `You lost with ${playerWeapon} \n you lost by ${player[playerWeapon].lose}`
+
+  } else {
+    return document.getElementById('winLose').innerText = `You tied!You both chose ${playerWeapon}`
+  }
 
 
 }
