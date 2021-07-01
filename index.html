@@ -15,38 +15,40 @@
 </head>
 
 
-<body class="container ">
-  <header class="m-5">
-    <h1 class="text-center"> 🤘 📰 ✂ </h1>
+<body class="container-fluid ">
+  <header class="row-md-12 m-5">
+    <h1 class="text-center col-md-12"> 🤘 📰 ✂ </h1>
   </header>
 
 
   <main>
-    <div class="row-md-12 d-flex justify-content-space-around">
-      <div class="col-md-4 card">
-        <img src="rock.jfif" alt="">
+    <div class="row-md-12 d-flex justify-content-space">
+      <div class="col-md-4 card p-2 ">
+        <img src="rock.jfif" alt="" class="pic">
         <button type="button" class="btn btn-primary" onclick="play('rock')">Rock</button>
       </div>
 
 
 
-      <div class="col-md-4 card">
-        <img src="paper.jfif" alt="">
-        <button type="button" class="btn btn-primary" onclick="play('paper')">Paper</button>
+      <div class="col-md-4 card ">
+        <img src="paper.jfif" alt="" class="pic">
+        <button type="button" class="btn btn-primary p-2" onclick="play('paper')">Paper</button>
       </div>
 
 
 
-      <div class="col-md-4 card">
-        <img src="scissors.jfif" alt="">
-        <button type="button" class="btn btn-primary" onclick="play('scissors')">Scissors</button>
+      <div class="col-md-4 card ">
+        <img src="scissors.jfif" alt="" class="pic">
+        <button type="button" class="btn btn-primary p-2" onclick="play('scissors')">Scissors</button>
       </div>
 
 
     </div>
+    <hr>
     <div class="row-md-12 card">
       <div class="col-12 text-center" id="winLose">
-        <h1>Will you win? Choose your weapon and let's play!</h1>
+        <h1>Will you win? </h1>
+        <h2>Choose your weapon and let's play!</h2>
       </div>
     </div>
 

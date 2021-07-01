@@ -33,14 +33,14 @@ function determineWinner(playerWeapon) {
 
 
   if (final == 2) {
-    return document.getElementById('winLose').innerText = `You won with ${playerWeapon} \n you beat ${player[playerWeapon].win}`
+    return document.getElementById('winLose').innerText = `You won with strongest ${playerWeapon} EVER!!! \n you beat ${player[playerWeapon].win}! Nice job!`
   }
 
   if (final == 0) {
-    return document.getElementById('winLose').innerText = `You lost with ${playerWeapon} \n you lost by ${player[playerWeapon].lose}`
+    return document.getElementById('winLose').innerText = `Oh no! Your ${playerWeapon} wasn't good enough! \n you lost by ${player[playerWeapon].lose}...that's sad...`
 
   } else {
-    return document.getElementById('winLose').innerText = `You tied!You both chose ${playerWeapon}`
+    return document.getElementById('winLose').innerText = `You tied! You both chose ${playerWeapon} you smarty pants!`
   }
 
 
