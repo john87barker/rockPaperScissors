@@ -30,7 +30,7 @@ function play(playerWeapon) {
 function determineWinner(playerWeapon) {
   let final = Math.round(Math.random() * 2.5)
   console.log(final)
-  let weapon = player[0]
+
 
   if (final == 2) {
     return document.getElementById('winLose').innerText = `You won with ${playerWeapon} \n you beat ${player[playerWeapon].win}`
